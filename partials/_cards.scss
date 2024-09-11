@@ -1,0 +1,21 @@
+@import 'variables';
+
+.card {
+    background-color: $primary;
+    margin: 5px;
+    padding: 5px;
+    
+    .card-button {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        border: none;
+        background-color: lighten($primary, 15%);
+        color: complementary($primary);
+        @include small-cap;
+
+        &:hover {
+            background-color: lighten($primary, 25%);
+        }
+    }
+}
