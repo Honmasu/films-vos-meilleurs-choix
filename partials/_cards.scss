@@ -1,21 +1,20 @@
-@import 'variables';
+@use 'variables';
 
 .card {
-    background-color: $primary;
+    background-color: #73BA9B;
     margin: 5px;
     padding: 5px;
     
-    .card-button {
+    .card__btn {
         display: block;
         width: 100%;
         padding: 5px 0;
         border: none;
-        background-color: lighten($primary, 15%);
-        color: complementary($primary);
-        @include small-cap;
+        background-color: lighten(#73BA9B, 15%);
+        color: complementary(#73BA9B);
 
         &:hover {
-            background-color: lighten($primary, 25%);
+            background-color: lighten(#73BA9B, 25%);
         }
     }
 }
